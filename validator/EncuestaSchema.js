@@ -1,7 +1,7 @@
 import { checkSchema } from "express-validator";
 
 export const EncuestaSchema = checkSchema({
-    edad: {
+    edadregistro: {
         in: ["body"],
         notEmpty: true,
         isInt: {
