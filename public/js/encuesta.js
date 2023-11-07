@@ -27,7 +27,7 @@ encuesta.addEventListener("submit", async (e) => {
     "#horariofavoritoregistro"
   ).value;
 
-  const response = await fetch("http://localhost:4000/api/encuesta", {
+  const response = await fetch("/api/encuesta", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
