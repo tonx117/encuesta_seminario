@@ -3,8 +3,6 @@ import Encuesta from "../model/EncuestaModel.js";
 const encuestactrl = {};
 
 encuestactrl.store = async (req, res) => {
-  console.log("req.body");
-
   try {
     const nuevaEncuesta = await Encuesta.create(req.body);
 
