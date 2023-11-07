@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radio IPF</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <section class="main">
+      <figure class="main__figure">
+        <img src="/images/imagen_2023-09-07_100448859.png" class="main__img" />
+      </figure>
+
+      <div class="main__contact">
+        <h2 class="main__title">Bienvenido!</h2>
+        <p class="main__paragraph">
+          Por favor ingrese los datos a continuación
+        </p>
+
+        <form class="main__form" id="formregister">
+          <input
+            type="number"
+            placeholder="Edad"
+            class="main__input"
+            id="edadregistro"
+            required
+          />
+
+          <select class="main__input" id="generoregistro" required>
+            <option value="" disabled selected>Género</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+          </select>
+
+          <input
+            type="text"
+            placeholder="Localidad"
+            class="main__input"
+            id="localidadregistro"
+            required
+          />
+
+          <select class="main__input" id="nivelestudioregistro" required>
+            <option value="" disabled selected>Nivel de Estudio</option>
+            <option value="primaria">Primaria</option>
+            <option value="secundaria">Secundaria</option>
+            <option value="preparatoria">Preparatoria</option>
+            <option value="universidad">Universidad</option>
+            <option value="posgrado">Posgrado</option>
+          </select>
+
+          <input
+            type="text"
+            placeholder="Género Musical"
+            class="main__input"
+            id="generomusicalregistro"
+          />
+
+          <input
+            type="text"
+            placeholder="Canción Reciente"
+            class="main__input"
+            id="cancionrecenteregistro"
+          />
+
+          <input
+            type="text"
+            placeholder="Canción Favorita"
+            class="main__input"
+            id="cancionfavoritaregistro"
+          />
+
+          <input
+            type="text"
+            placeholder="Artista Musical"
+            class="main__input"
+            id="artistamusicalregistro"
+          />
+
+          <input
+            type="text"
+            placeholder="Plataforma Musical"
+            class="main__input"
+            id="plataformamusicalregistro"
+          />
+
+          <input
+            type="number"
+            placeholder="Tiempo de Escucha Diaria (minutos)"
+            class="main__input"
+            id="tiempoescucharegistro"
+          />
+
+          <select class="main__input" id="horariofavoritoregistro">
+            <option value="" disabled selected>
+              Horario Favorito de Escucha
+            </option>
+            <option value="mañana">Mañana</option>
+            <option value="tarde">Tarde</option>
+            <option value="noche">Noche</option>
+          </select>
+
+          <input
+            type="submit"
+            value="Registrarse"
+            class="main__input main__input--send"
+          />
+        </form>
+      </div>
+    </section>
+    <script src="js/sweetalert.js"></script>
+    <script src="js/encuesta.js"></script>
+  </body>
+</html>
