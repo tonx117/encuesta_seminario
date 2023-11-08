@@ -71,6 +71,9 @@ const Encuesta = sequelize.define("Encuesta", {
       max: 1440,
     },
   },
+  horario_favorito_escucha: {
+    type: DataTypes.STRING,
+  },
 });
 
 Encuesta.sync();
