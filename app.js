@@ -1,9 +1,9 @@
 import express from "express";
 import dotenv from "dotenv";
-import Encuesta from "./model/EncuestaModel.js";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
 import routes from "./routes/router.encuesta.js";
+import sequelize from "./database/sequelize.js";
 
 dotenv.config();
 
@@ -22,6 +22,14 @@ app.get("/", (_req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
 
-app.listen(process.env.PORT, () =>
+sequelize.sync()
+  .then(() => {
+    console.log('Tabla Encuesta sincronizada correctamente');
+  })
+  .catch((error) => {
+    console.error('Error al sincronizar la tabla:', error);
+  });
+
+app.listen(port, () =>
   console.log("Server on port: omaiga " + port)
 );
