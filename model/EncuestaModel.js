@@ -7,8 +7,8 @@ const Encuesta = sequelize.define("Encuesta", {
     allowNull: false,
     validate: {
       isInt: true,
-      min: 10,  
-      max: 100, 
+      min: 10,
+      max: 100,
     },
   },
   genero: {
@@ -22,8 +22,8 @@ const Encuesta = sequelize.define("Encuesta", {
     type: DataTypes.STRING,
     allowNull: false,
     validate: {
-      isAlpha: true, 
-      len: [4, 25], 
+      isAlpha: true,
+      len: [4, 25],
     },
   },
   nivel_estudio: {
@@ -34,13 +34,13 @@ const Encuesta = sequelize.define("Encuesta", {
     type: DataTypes.STRING,
     validate: {
       isAlpha: true,
-      len: [3, 25], 
+      len: [3, 25],
     },
   },
   cancion_reciente: {
     type: DataTypes.STRING,
     validate: {
-      len: [3, 25], 
+      len: [3, 25],
     },
   },
   cancion_favorita: {
@@ -52,13 +52,13 @@ const Encuesta = sequelize.define("Encuesta", {
   artista_musical: {
     type: DataTypes.STRING,
     validate: {
-      len: [3, 25], 
+      len: [3, 25],
     },
   },
   plataforma_musical: {
     type: DataTypes.STRING,
     validate: {
-      isAlpha: true, 
+      isAlpha: true,
       len: [3, 25],
     },
   },
@@ -67,8 +67,8 @@ const Encuesta = sequelize.define("Encuesta", {
     allowNull: false,
     validate: {
       isInt: true,
-      min: 0,   
-      max: 5000, 
+      min: 0,
+      max: 1440,
     },
   },
 });
