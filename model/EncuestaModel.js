@@ -33,7 +33,6 @@ const Encuesta = sequelize.define("Encuesta", {
   genero_musical: {
     type: DataTypes.STRING,
     validate: {
-      isAlpha: true,
       len: [3, 25],
     },
   },
