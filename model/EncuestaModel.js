@@ -14,17 +14,10 @@ const Encuesta = sequelize.define("Encuesta", {
   genero: {
     type: DataTypes.STRING,
     allowNull: false,
-    validate: {
-      isAlpha: true,
-    },
   },
   localidad: {
     type: DataTypes.STRING,
     allowNull: false,
-    validate: {
-      isAlpha: true,
-      len: [4, 25],
-    },
   },
   nivel_estudio: {
     type: DataTypes.STRING,
@@ -32,34 +25,23 @@ const Encuesta = sequelize.define("Encuesta", {
   },
   genero_musical: {
     type: DataTypes.STRING,
-    validate: {
-      len: [3, 25],
-    },
+    allowNull: false,
   },
   cancion_reciente: {
     type: DataTypes.STRING,
-    validate: {
-      len: [3, 25],
-    },
+    allowNull: false,
   },
   cancion_favorita: {
     type: DataTypes.STRING,
-    validate: {
-      len: [3, 25],
-    },
+    allowNull: false,
   },
   artista_musical: {
     type: DataTypes.STRING,
-    validate: {
-      len: [3, 25],
-    },
+    allowNull: false,
   },
   plataforma_musical: {
     type: DataTypes.STRING,
-    validate: {
-      isAlpha: true,
-      len: [3, 25],
-    },
+    allowNull: false,
   },
   tiempo_escucha_diario: {
     type: DataTypes.INTEGER,
